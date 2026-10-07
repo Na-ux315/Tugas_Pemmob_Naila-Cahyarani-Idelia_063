@@ -1,0 +1,138 @@
+app -> res -> layout -> activity_main.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/judul"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_marginTop="8dp"
+        android:text="@string/label_bilangan1"
+        android:textSize="16sp" />
+
+    <!-- Input Bilangan 1 -->
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label1"
+        android:layout_marginTop="4dp"
+        android:inputType="numberDecimal"
+        android:autofillHints="number"
+        android:hint="@string/hint_bilangan1" />
+
+    <!-- Label Bilangan 2 -->
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/e1"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_bilangan2"
+        android:textSize="16sp" />
+
+    <!-- Input Bilangan 2 -->
+    <EditText
+        android:id="@+id/e2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label2"
+        android:layout_marginTop="4dp"
+        android:inputType="numberDecimal"
+        android:autofillHints="number"
+        android:hint="@string/hint_bilangan2" />
+
+    <!-- ===== TOMBOL ===== -->
+    <!-- Tombol + -->
+    <Button
+        android:id="@+id/tambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/e2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="6dp"
+        android:text="@string/btn_tambah"
+        android:textSize="18sp"
+        android:onClick="tambah" />
+
+    <!-- Tombol - -->
+    <Button
+        android:id="@+id/kurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/e2"
+        android:layout_toEndOf="@id/tambah"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="6dp"
+        android:text="@string/btn_kurang"
+        android:textSize="18sp"
+        android:onClick="kurang" />
+
+    <!-- Tombol x -->
+    <Button
+        android:id="@+id/kali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/e2"
+        android:layout_toEndOf="@id/kurang"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="6dp"
+        android:text="@string/btn_kali"
+        android:textSize="18sp"
+        android:onClick="kali" />
+
+    <!-- Tombol : -->
+    <Button
+        android:id="@+id/bagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/e2"
+        android:layout_toEndOf="@id/kali"
+        android:layout_marginTop="24dp"
+        android:text="@string/btn_bagi"
+        android:textSize="18sp"
+        android:onClick="bagi" />
+
+    <!-- Label Hasil -->
+    <TextView
+        android:id="@+id/labelHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tambah"
+        android:layout_marginTop="24dp"
+        android:text="@string/label_hasil"
+        android:textSize="16sp" />
+
+    <!-- Hasil -->
+    <EditText
+        android:id="@+id/e3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelHasil"
+        android:layout_marginTop="4dp"
+        android:inputType="numberDecimal"
+        android:autofillHints=""
+        android:text="@string/nilai_awal"
+        android:focusable="false"
+        android:clickable="false" />
+
+</RelativeLayout>
