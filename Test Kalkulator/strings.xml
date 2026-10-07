@@ -1,0 +1,26 @@
+app -> res -> values -> strings.xml
+
+<resources>
+    <string name="app_name">Test Kalkulator</string>
+
+    <!-- Judul -->
+    <string name="title_hitung_luas">Hitung Luas Persegi Panjang</string>
+
+    <!-- Label -->
+    <string name="label_panjang">Panjang</string>
+    <string name="label_lebar">Lebar</string>
+
+    <!-- Hint -->
+    <string name="hint_panjang">Masukkan Panjang</string>
+    <string name="hint_lebar">Masukkan Lebar</string>
+
+    <!-- Tombol -->
+    <string name="button_hitung">HITUNG</string>
+
+    <!-- Hasil -->
+    <string name="hasil_awal">Hasil : </string>
+    <string name="hasil_format">Hasil : %s</string>
+    <string name="error_kosong">Panjang dan Lebar harus diisi!</string>
+    <string name="error_invalid">Masukkan angka yang valid!</string>
+
+</resources>
