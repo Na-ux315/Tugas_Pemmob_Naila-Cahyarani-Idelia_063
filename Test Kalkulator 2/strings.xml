@@ -1,0 +1,32 @@
+app -> res -> values -> strings.xml
+
+<resources>
+    <string name="app_name">Test Kalkulator 2</string>
+
+        <!-- Judul -->
+        <string name="judul">Kalkulator Sederhana</string>
+
+        <!-- Label -->
+        <string name="label_bilangan1">Bilangan 1</string>
+        <string name="label_bilangan2">Bilangan 2</string>
+        <string name="label_hasil">Hasil</string>
+
+        <!-- Hint -->
+        <string name="hint_bilangan1">Masukkan bilangan 1</string>
+        <string name="hint_bilangan2">Masukkan bilangan 2</string>
+
+        <!-- Tombol -->
+        <string name="btn_tambah">+</string>
+        <string name="btn_kurang">–</string>
+        <string name="btn_kali">×</string>
+        <string name="btn_bagi">÷</string>
+
+        <!-- Nilai awal -->
+        <string name="nilai_awal">0</string>
+
+        <!-- Pesan -->
+        <string name="pesan_kosong">Isi kedua bilangan terlebih dahulu!</string>
+        <string name="pesan_bagi_nol">Tidak bisa dibagi 0!</string>
+        <string name="pesan_invalid">Input tidak valid!</string>
+
+</resources>
